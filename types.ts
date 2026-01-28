@@ -6,14 +6,19 @@ export interface BikeSpec {
   description: string;
 }
 
+export interface ColorVariant {
+  name: string;
+  hex: string;
+  image: string;
+}
+
 export interface BikeModel {
   id: string;
   name: string;
   tagline: string;
   price: string;
-  image: string;
+  colorVariants: ColorVariant[];
   specs: BikeSpec[];
-  color: string;
 }
 
 export interface ChatMessage {

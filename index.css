@@ -1,3 +1,57 @@
+@import url('https://fonts.googleapis.com/css2?family=Michroma&family=Rajdhani:wght@300;400;500;600;700&family=Orbitron:wght@400;500;600;700;800;900&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer base {
+  html {
+    font-family: 'Rajdhani', sans-serif;
+  }
+
+  body {
+    font-family: 'Rajdhani', sans-serif;
+    font-weight: 500;
+    color: #000;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-family: 'Michroma', 'Orbitron', sans-serif;
+    font-weight: 400;
+    /* Michroma is naturally bold/wide */
+    letter-spacing: 0.05em;
+    /* Add slight spacing for style */
+    text-transform: uppercase;
+    /* Force uppercase for futuristic look */
+  }
+
+  /* Make sure bold text uses heavy weights */
+  strong,
+  b {
+    font-weight: 700;
+  }
+}
+
+@layer utilities {
+  .font-heading {
+    font-family: 'Michroma', 'Orbitron', sans-serif;
+  }
+
+  .font-body {
+    font-family: 'Rajdhani', sans-serif;
+  }
+
+  .font-tech {
+    font-family: 'Orbitron', sans-serif;
+  }
+
+  /* Stylish text utilities */
+  .text-glow {
+    text-shadow: 0 0 10px rgba(16, 185, 129, 0.5);
+  }
+}
